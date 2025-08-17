@@ -1,0 +1,42 @@
+/* Social Responsibility */
+.banner{
+    background-image: url('../../../../assets/AboutUs/banner.jpg');
+    background-size: cover;
+    
+}
+
+
+@media (min-width: 992px) and (max-width: 1190px){
+    .social-responsibility{
+        background: url('../../../../assets/SocialResponsibility/social-inner-bg.jpg');
+        background-position: 150%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1191px) and (max-width: 1333px){
+    .social-responsibility{
+        background: url('../../../../assets/SocialResponsibility/social-inner-bg.jpg');
+        background-position: 135%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1333px) and (max-width: 1364px){
+    .social-responsibility{
+        background: url('../../../../assets/SocialResponsibility/social-inner-bg.jpg');
+        background-position: 150%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1365px){
+    .social-responsibility{
+        background: url('../../../../assets/SocialResponsibility/social-inner-bg.jpg');
+        background-position: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* End Social Responsibility */

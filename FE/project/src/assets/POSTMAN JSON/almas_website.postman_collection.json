@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "76ec4711-e5eb-4c86-88e6-5c7748221685",
+		"name": "almas_website",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16212827",
+		"_collection_link": "https://almas-team.postman.co/workspace/Almas-Team-Workspace~71f6f4be-78bc-4c37-b8dd-6af10e7bf560/collection/16212827-76ec4711-e5eb-4c86-88e6-5c7748221685?action=share&source=collection_link&creator=16212827"
+	},
+	"item": [
+		{
+			"name": "Get Selected Diamonds",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"shape\": [\"Oval\"],\n    \"color\" : [\"J\"],\n    \"min_price\": 483,\n    \"max_price\": 483,\n    \"min_carat\": 0.4,\n    \"max_carat\": 0.4,\n    \"cut\": [\"\"],\n    \"clarity\": [\"VS2\"],\n    \"certificate\": \"GIA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/get_selected_diamonds"
+			},
+			"response": []
+		},
+		{
+			"name": "Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9696/test/"
+			},
+			"response": []
+		},
+		{
+			"name": "Odoo Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"params\": {\n        \"db\": \"odoo17\",\n        \"login\": \"meriem@gmail.com\",\n        \"password\": \"odoo17\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/web/session/authenticate"
+			},
+			"response": []
+		},
+		{
+			"name": "Order Creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer\": \"Test\",\n    \"product_id\": 1,\n    \"product_category\": 1,\n    \"product_price\": 0.0,\n    \"purchase_date\": \"2020-03-12 12:50:00\",\n    \"quantity\": 3,\n    \"subtotal\": 50,\n    \"total_count\":40\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/send_cart_order"
+			},
+			"response": []
+		},
+		{
+			"name": "Contact Message Creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"full_name\": \"Test\",\n    \"email_address\": \"test@test.com\",\n    \"mobile_number\": \"102154854\",\n    \"country\": \"\",\n    \"message\": \"message testing\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/send_contact_messages"
+			},
+			"response": []
+		},
+		{
+			"name": "Design Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"full_name\" : \"Test testing\",\n    \"email_address\" : \"test@test.com\",\n    \"address\" : \"Tessststsst\",\n    \"mobile_number\" : \"1215415210\",\n    \"type\" : \"\",\n    \"metal\" : 1,\n    \"country\" : \"BB\",\n    \"file\" : \"\",\n    \"message\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/send_design_request"
+			},
+			"response": []
+		},
+		{
+			"name": "Catgeories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9696/api/v1/get_all_categories"
+			},
+			"response": []
+		},
+		{
+			"name": "All Diamonds",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/get_all_diamonds"
+			},
+			"response": []
+		},
+		{
+			"name": "Selected Diamond",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"shape\": [ \"Oval\" ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/get_selected_diamonds"
+			},
+			"response": []
+		},
+		{
+			"name": "Diamond by ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"model_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/get_diamond_by_id"
+			},
+			"response": []
+		},
+		{
+			"name": "Type By Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"category_name\": \"Rings\"   \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/get_types_by_category"
+			},
+			"response": []
+		},
+		{
+			"name": "Selected Jewellery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type_name\": \"Hoops\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/get_selected_jewellery"
+			},
+			"response": []
+		},
+		{
+			"name": "Jewellery by ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"model_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/get_jewellery_by_id"
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"params\": {\n        \"full_name\": \"Test\",\n        \"email\": \"test@test.com\",\n        \"password\": \"12345\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Odoo Destroy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"params\": {\n        \n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/web/session/destroy"
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"params\": {\n        \n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/get_all_users"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"params\": {\n        \"id\": 1,\n        \"full_name\": \"Meriem\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/update_user"
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"test\",\n    \"login\": \"test@test.com\",\n    \"email\": \"test@test.com\",\n    \"password\": \"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://195.26.240.215:8096/api/v1/create_user"
+			},
+			"response": []
+		},
+		{
+			"name": "All Questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9696/api/v1/get_all_questions"
+			},
+			"response": []
+		},
+		{
+			"name": "All Jeweleries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9696/api/v1/get_all_jewelleries"
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Wishlist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\": 1,\n    \"diamond_id\":  9,\n    \"added_date\": \"2020-03-12\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/add_to_wishlist"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\": 1,\n    \"diamond_id\":  9,\n    \"added_date\": \"2020-03-12\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:9696/api/v1/add_to_compare_diamonds"
+			},
+			"response": []
+		}
+	]
+}

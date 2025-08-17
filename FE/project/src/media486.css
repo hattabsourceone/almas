@@ -1,0 +1,41 @@
+@media (min-width: 486px) {
+  .shape-characteristics ul li span {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .shape-characteristics li {
+    padding: 10px;
+  }
+  .shape-characteristics li.culet-line.active ::before {
+    width: 175px;
+  }
+  .shape-characteristics li.pavilion-line.active ::before {
+    width: 170px;
+  }
+  .shape-characteristics li.gridle-line.active ::before {
+    width: 140px;
+  }
+  .shape-characteristics li.crown-line.active ::before {
+    width: 150px;
+  }
+  .shape-characteristics li.table-line.active ::before {
+    width: 240px;
+  }
+
+  .shape-characteristics li {
+    text-transform: capitalize;
+    padding: 10px;
+    opacity: 0.5;
+  }
+  .shape-characteristics .image-container {
+    background-color: #cecece;
+    position: relative;
+    border-radius: 500px;
+    height: 300px;
+    width: 300px;
+  }
+  .shape-characteristics img {
+    width: 200px;
+  }
+}

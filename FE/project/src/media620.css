@@ -1,0 +1,27 @@
+@media (min-width: 620px) {
+  .grid-2-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .spacing-sm {
+    margin-left: 0rem;
+  }
+
+  .collection-image-container-1,
+  .collection-image-container-3 {
+    width: 350px;
+    height: 350px;
+  }
+  .collection-image-container-2,
+  .collection-image-container-4 {
+    width: 300px;
+    height: 300px;
+  }
+  .collection-image {
+    padding: 50px;
+  }
+  .collection-image2 {
+    padding: 75px;
+  }
+}
